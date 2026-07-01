@@ -21,22 +21,16 @@ spec:
       containers:
         - name: ai-assistant-container
 
-          image: langchain-agent:latest
+          image: ai-assistant:v1.0
           imagePullPolicy: Never
 
           ports:
             - containerPort: 8000
 
-          env:
-            - name: OLLAMA_BASE_URL
-              value: "http://host.minikube.internal:11434"
-
-            - name: OLLAMA_MODEL
-              value: "llama3"
-
-            - name: PYTHONUNBUFFERED
-              value: "1"
-
+          envFrom:
+            - configMapRef:
+                name: ai-assistant-config
+                
           resources:
             requests:
               cpu: "250m"
