@@ -21,8 +21,9 @@ spec:
       containers:
         - name: ai-assistant-container
 
-          image: ai-assistant:v1.0
-          imagePullPolicy: Never
+          image: abhianand77/ai-assistant:v1.0
+          
+          imagePullPolicy: Always
 
           ports:
             - containerPort: 8000
