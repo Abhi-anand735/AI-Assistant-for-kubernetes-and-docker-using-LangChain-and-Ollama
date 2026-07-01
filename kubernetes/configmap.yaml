@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-assistant-config
+  namespace: ai-assistant-app
+  labels:
+    app: ai-assistant
+
+data:
+  OLLAMA_BASE_URL: "http://host.minikube.internal:11434"
+  OLLAMA_MODEL: "llama3"
+  PYTHONUNBUFFERED: "1"
