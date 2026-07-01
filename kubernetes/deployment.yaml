@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-assistant-deployment
+  namespace: ai-assistant-app
+  labels:
+    app: ai-assistant
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: ai-assistant
+
+  template:
+    metadata:
+      labels:
+        app: ai-assistant
+
+    spec:
+      containers:
+        - name: ai-assistant-container
+
+          image: langchain-agent:latest
+          imagePullPolicy: Never
+
+          ports:
+            - containerPort: 8000
+
+          env:
+            - name: OLLAMA_BASE_URL
+              value: "http://host.minikube.internal:11434"
+
+            - name: OLLAMA_MODEL
+              value: "llama3"
+
+            - name: PYTHONUNBUFFERED
+              value: "1"
+
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+
+      
