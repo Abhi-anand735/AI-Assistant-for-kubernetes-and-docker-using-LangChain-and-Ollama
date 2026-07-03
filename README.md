@@ -29,6 +29,7 @@ AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama
 |   ├── namespace.yaml
 |   ├── configmap.yaml
 |
+|
 ├── requirements.txt
 ├── Dockerfile
 ├── .dockerignore
@@ -71,9 +72,9 @@ Ask your Kubernetes Agent a Question: > what containers are running on docker?
 
 ## Future Enhancements
 
-.Extend the application to support multiple local LLMs such as Mistral, DeepSeek.
-.Develop a graphical user interface that allows users to Chat with the assistant,
- View Kubernetes resources.
+- Extend the application to support multiple local LLMs such as Mistral, DeepSeek.
+- Develop a graphical user interface that allows users to Chat with the assistant,
+  View Kubernetes resources.
 
 
 
