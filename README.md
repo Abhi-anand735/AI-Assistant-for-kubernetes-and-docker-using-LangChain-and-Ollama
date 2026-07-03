@@ -14,26 +14,25 @@ You ask a question in natural language; the LLM decides which tool to call and a
 
 ## Project Layout 
 
-AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama
-
+AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 │
 ├── app/
-│   ├── main.py                 
-|  
-│   ├── agent.py
-│   
+│   ├── __init__.py
+│   ├── main.py
+│   └── agent.py
 │
 ├── kubernetes/
-|   ├── deployment.yaml
-|   ├── service.yaml
-|   ├── namespace.yaml
-|   ├── configmap.yaml
-|
-|
+│   ├── namespace.yaml
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── configmap.yaml
+│
 ├── requirements.txt
 ├── Dockerfile
 ├── .dockerignore
-└── README.md
+├── .gitignore
+├── README.md
+└── LICENSE
 
 ## Prerequisites
 
