@@ -1,54 +1,54 @@
 - Python Not Found
-   * Error:
+   * Cause:
      python is not recognized as an internal or external command
-   * Debug
+   * Debug:
      ```` bash
      python --version
      ````
 
 - Virtual Environment Not Activated
-   * Error:
+   * Cause:
      ModuleNotFoundError
-   * Debug
+   * Debug:
      ```` bash
      .venv\Scripts\activate
      ````
 
 - Ollama Not Installed
-   * Error:
+   * Cause:
      Connection refused
-   * Debug
+   * Debug:
     ```` bash
     ollama serve
     ````
 - Ollama Model Missing
-   * Error:
+   * Cause:
      model not found
-   * Debug
+   * Debug:
      ```` bash
      ollama pull qwen3:8b
      ````
 
 - Docker Engine Not Running
-   * Error:
+   * Cause:
      Cannot connect to the Docker daemon
-   * Debug
+   * Debug:
      ```` bash
      docker ps
      ````
 
 - Kubernetes Cluster Not Running
-   * Error:
+   * Cause:
      The connection to the server localhost:6443 was refused
-   * Debug
+   * Debug:
     ```` bash
     minikube start
     ````
 
 - Agent Cannot Execute Kubernetes Commands
-   * Error:
+   * Cause:
      kubectl is not configured
-   * Debug 
+   * Debug: 
      ```` bash
      kubectl config current-context
      ````                                
