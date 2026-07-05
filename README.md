@@ -18,7 +18,6 @@ You ask a question in natural language; the LLM decides which tool to call and a
 AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 │
 ├── app/
-│   ├── __init__.py
 │   ├── main.py
 │   └── agent.py
 │
