@@ -12,6 +12,21 @@ The agent is wired up with two tools:
 
 You ask a question in natural language; the LLM decides which tool to call and answers based on the live cluster / Docker state.
 
+## How the agent works
+
+  You ask a question
+        │
+        ▼
+  LLM reads each tool's docstring  ──► decides which tool fits
+        │
+        ▼
+  Tool runs the REAL command (kubectl / docker)
+        │
+        ▼
+  LLM reads the live output ──► writes the answer
+
+  The LLM never runs commands itself — it only chooses a tool. The Python function runs the actual command    and hands the output back to the model.
+
 ## Project Layout 
 
  ```text
@@ -70,11 +85,6 @@ Ask your Kubernetes Agent a Question: > show me all pods
 Ask your Kubernetes Agent a Question: > what containers are running on docker?
 ```
 
-## Future Enhancements
-
-- Extend the application to support multiple local LLMs such as Mistral, DeepSeek.
-- Develop a graphical user interface that allows users to Chat with the assistant,
-  View Kubernetes resources.
 
 
 
