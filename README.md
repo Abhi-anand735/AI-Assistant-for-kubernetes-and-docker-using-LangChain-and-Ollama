@@ -51,6 +51,26 @@ AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 ├── README.md
 └── LICENSE
 ```
+## Technology Stack
+
+| Category                    | Technology                            |
+| --------------------------- | ------------------------------------- |
+| **Programming Language**    | Python 3.10+                          ||
+| **AI Framework**            | LangChain                             |
+| **Local LLM Runtime**       | Ollama                                |
+| **LLM Models**              |  Qwen3:8b, Llama 3 (Configurable) |
+| **API Server**              | Uvicorn                               ||
+| **Container Runtime**       | Docker Desktop                        |
+| **Container Orchestration** | Kubernetes (Minikube)                 |
+| **CLI Tools**               | Docker CLI, kubectl                   |
+| **Command Execution**       | Python `subprocess`                   |
+| **Testing Framework**       | Pytest                                |
+| **Configuration**           | Python Dotenv (.env)                  |
+| **Package Manager**         | pip                                   |
+| **Development Environment** | Visual Studio Code                    |
+| **Operating System**        | Windows 11 / Linux / macOS            |
+| **Version Control**         | Git                                   |
+| **Repository Hosting**      | GitHub                                |
 
 ## Prerequisites
 
