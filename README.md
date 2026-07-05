@@ -14,6 +14,7 @@ You ask a question in natural language; the LLM decides which tool to call and a
 
 ## How the agent works
 
+ ```text
   You ask a question
         │
         ▼
@@ -25,6 +26,7 @@ You ask a question in natural language; the LLM decides which tool to call and a
         ▼
   LLM reads the live output ──► writes the answer
 
+  ```
   The LLM never runs commands itself — it only chooses a tool. The Python function runs the actual command    and hands the output back to the model.
 
 ## Project Layout 
