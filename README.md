@@ -14,6 +14,7 @@ You ask a question in natural language; the LLM decides which tool to call and a
 
 ## Project Layout 
 
+ ```text
 AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 │
 ├── app/
@@ -33,6 +34,7 @@ AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
 
 ## Prerequisites
 
