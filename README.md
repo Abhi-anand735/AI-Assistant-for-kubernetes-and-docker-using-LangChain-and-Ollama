@@ -58,8 +58,7 @@ AI-assistant-for-kubernetes-and-docker-using-LangChain-and-Ollama/
 | **Programming Language**    | Python 3.10+                          ||
 | **AI Framework**            | LangChain                             |
 | **Local LLM Runtime**       | Ollama                                |
-| **LLM Models**              |  Qwen3:8b, Llama 3 (Configurable) |
-| **API Server**              | Uvicorn                               ||
+| **LLM Models**              |  Qwen3:8b, Llama 3 (Configurable)     |
 | **Container Runtime**       | Docker Desktop                        |
 | **Container Orchestration** | Kubernetes (Minikube)                 |
 | **CLI Tools**               | Docker CLI, kubectl                   |
